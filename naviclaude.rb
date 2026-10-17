@@ -5,21 +5,21 @@
 class Naviclaude < Formula
   desc "TUI for managing Claude Code sessions across tmux"
   homepage "https://github.com/thbits/naviClaude"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thbits/naviClaude/releases/download/v0.5.0/naviclaude_0.5.0_darwin_amd64.tar.gz"
-      sha256 "241f50398c66bd1f19ece344f911c20138b8b00629453c41ccb819a2009fcb9d"
+      url "https://github.com/thbits/naviClaude/releases/download/v0.6.0/naviclaude_0.6.0_darwin_amd64.tar.gz"
+      sha256 "d2844d4feccff1aeee7985f817eadbb0b8e695cd15066f13b2cd72ea1b4c2d10"
 
       define_method(:install) do
         bin.install "naviclaude"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thbits/naviClaude/releases/download/v0.5.0/naviclaude_0.5.0_darwin_arm64.tar.gz"
-      sha256 "a751b1e655f835b0d2b4ffeab36cb913909c372f810375e30d007674ea028e28"
+      url "https://github.com/thbits/naviClaude/releases/download/v0.6.0/naviclaude_0.6.0_darwin_arm64.tar.gz"
+      sha256 "44c65613cb90b2681712ff7c061934af74da836d23c92db6da43c0903d57b586"
 
       define_method(:install) do
         bin.install "naviclaude"
@@ -29,15 +29,15 @@ class Naviclaude < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thbits/naviClaude/releases/download/v0.5.0/naviclaude_0.5.0_linux_amd64.tar.gz"
-      sha256 "d28a3b4cab2c14223106eff8dfa99da299e5a01ad2d65405cbf42599afd2fda0"
+      url "https://github.com/thbits/naviClaude/releases/download/v0.6.0/naviclaude_0.6.0_linux_amd64.tar.gz"
+      sha256 "96b50bc35179777c9fbf4c572d6f1f00c196c3e3c9ea369854a45a4802b5821e"
       define_method(:install) do
         bin.install "naviclaude"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thbits/naviClaude/releases/download/v0.5.0/naviclaude_0.5.0_linux_arm64.tar.gz"
-      sha256 "a62aa3b1277dda0f556625a513578b0d14e2bf9d292cb91258184365cc4dc7d0"
+      url "https://github.com/thbits/naviClaude/releases/download/v0.6.0/naviclaude_0.6.0_linux_arm64.tar.gz"
+      sha256 "aacafaf256f975739e73043700751b4576cd08f7b775fb683b73dd57faf04286"
       define_method(:install) do
         bin.install "naviclaude"
       end
